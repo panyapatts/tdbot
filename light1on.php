@@ -1,6 +1,6 @@
 <?php
 $data = "{'sub': 'field_value'}";
-$url = " 'https://tdliff.firebaseio.com/Clip1.json";
+$url = "https://tdliff.firebaseio.com/Clip1.json";
 $headers = array('Content-Type: application/json');
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
