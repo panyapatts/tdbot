@@ -1,6 +1,6 @@
 <?php
 // Constants
-$FIREBASE = "https://tdliff.firebaseio.com/Clip1.json";
+$FIREBASE = "https://tdliff.firebaseio.com/Clip1";
 $NODE_DELETE = "temperature.json";
 $NODE_GET = "temperature.json";
 $NODE_PATCH = ".json";
