@@ -1,10 +1,13 @@
 <?php
-
-$cURLConnection = curl_init();
-
-curl_setopt($cURLConnection, CURLOPT_URL, 'http://204.2.62.173:8080/f178733a0c344217bf7b529262387d39/update/V1?value=1');
-curl_setopt($cURLConnection, CURLOPT_RETURNTRANSFER, true);
-
-$phoneList = curl_exec($cURLConnection);
-curl_close($cURLConnection);
+$data = "{'sub': 'field_value'}";
+$url = " 'https://tdliff.firebaseio.com/Clip1.json";
+$headers = array('Content-Type: application/json');
+$curl = curl_init();
+curl_setopt($curl, CURLOPT_URL, $url);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'PATCH');
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+$response = curl_exec($curl);
+curl_close($curl);
 ?>
