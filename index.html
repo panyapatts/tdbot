@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CNY LIFF</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #3F3F3F;
+  padding: 10px;
+}
+.grid-item {
+  
+  
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.button {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 10px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  width: 140px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #1abc9c;
+  color: #000;
+}
+
+.button:after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button:focus { outline:0; }
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+
+
+<div class="grid-container">
+  	<div class="grid-item">
+		<button class="button" onclick="Col1()">Column 1</button>
+	</div>
+	<div class="grid-item">
+		<button class="button" onclick="Col2()">Column 2</button>
+	</div>
+	<div class="grid-item">
+		<button class="button" onclick="Col3()">Column 3</button>
+	</div>
+	<div class="grid-item">
+		<button class="button" onclick="Col4()">Column 4</button>
+	</div>
+	
+  
+</div>
+<script>
+function Col1() {
+  var s = document.createElement("script");
+  s.src = "Col1.php";
+  document.body.appendChild(s);
+}
+function Col2() {
+  var s = document.createElement("script");
+  s.src = "Col2.php";
+  document.body.appendChild(s);
+}
+function Col3() {
+  var s = document.createElement("script");
+  s.src = "Col3.php";
+  document.body.appendChild(s);
+}
+function Col4() {
+  var s = document.createElement("script");
+  s.src = "Col4.php";
+  document.body.appendChild(s);
+}
+
+</script>
+	
+	
+	
+</body>
+</html>
+
